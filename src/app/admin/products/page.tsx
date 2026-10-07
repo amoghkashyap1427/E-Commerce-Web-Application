@@ -103,7 +103,7 @@ export default function AdminProductsPage() {
       ingredients: formData.ingredients,
       spice_level: formData.spice_level as "Mild" | "Medium" | "Hot",
       is_veg: formData.is_veg,
-      image_url: formData.image_url || "https://images.unsplash.com/photo-1596484552834-6a58f850b0a1?auto=format&fit=crop&q=80&w=600",
+      image_url: formData.image_url || "/images/categories/mango.png",
       variants: variants,
     };
 

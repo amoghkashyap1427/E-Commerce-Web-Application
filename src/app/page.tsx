@@ -25,7 +25,7 @@ export default function Home() {
       <section className="relative w-full h-[600px] md:h-[70vh] flex items-center justify-center bg-muted/30 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=1920" 
+            src="/images/hero.png" 
             alt="Traditional Indian Spices and Pickles" 
             fill 
             className="object-cover opacity-80"
@@ -100,7 +100,7 @@ export default function Home() {
             {Array.from(new Set(products.map(p => p.category))).slice(0,4).map((category, i) => (
               <Link href={`/shop?category=${category}`} key={category} className="group relative h-64 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
                 <Image 
-                  src={`https://images.unsplash.com/photo-${1596484552834 + i}?auto=format&fit=crop&q=80&w=400`} 
+                  src={`/images/categories/${category.toLowerCase()}.png`} 
                   alt={category} 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-500" 
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image 
-                src="https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&q=80&w=800" 
+                src="/images/hero.png" 
                 alt="Meet the Maker" 
                 fill 
                 className="object-cover" 

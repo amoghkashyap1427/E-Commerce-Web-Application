@@ -72,7 +72,7 @@ export const useAdminStore = create<AdminStore>()(
           spice_level: p.spice_level,
           is_veg: p.is_veg,
           image_url: p.product_images?.[0]?.image_url ||
-            'https://images.unsplash.com/photo-1627308595171-d1b5d672158e?auto=format&fit=crop&q=80&w=600',
+            '/images/categories/mango.png',
           variants: (p.product_variants ?? []).map((v: any) => ({
             id: v.id,
             weight: v.weight,
